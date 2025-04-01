@@ -1,0 +1,27 @@
+HTTP/1.1 200 OK
+Content-Type: application/json
+ 
+{
+  "batch_id": "BATCH001",
+  "status": "completed",
+  "total_applications": 25,
+  "processed_applications": 25,
+  "completion_time": "2025-03-27T23:25:12Z",
+  "summary": {
+	"average_score": 76.4,
+	"score_distribution": {
+  	"90-100": 3,
+  	"80-89": 8,
+  	"70-79": 10,
+  	"60-69": 3,
+  	"below-60": 1
+	},
+	"recommendations": {
+  	"strong_accept": 5,
+  	"accept": 12,
+  	"conditional_accept": 4,
+  	"wait_list": 3,
+  	"reject": 1
+	}
+  }
+}
