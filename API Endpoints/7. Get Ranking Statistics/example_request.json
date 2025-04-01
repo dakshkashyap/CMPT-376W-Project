@@ -1,0 +1,4 @@
+GET /v1/analytics/ranking-statistics?start_date=2025-02-27T00:00:00Z&end_date=2025-03-27T23:59:59Z&group_by=week&include_demographics=true HTTP/1.1
+Host: ranking.bays.ca
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+

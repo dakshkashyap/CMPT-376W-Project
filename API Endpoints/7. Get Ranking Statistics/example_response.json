@@ -1,0 +1,67 @@
+HTTP/1.1 200 OK
+Content-Type: application/json
+ 
+{
+  "start_date": "2025-02-27T00:00:00Z",
+  "end_date": "2025-03-27T23:59:59Z",
+  "group_by": "week",
+  "overall_statistics": {
+	"total_applications": 258,
+	"average_score": 78.2,
+	"score_distribution": {
+  	"90-100": 31,
+  	"80-89": 82,
+  	"70-79": 95,
+  	"60-69": 42,
+  	"below-60": 8
+	},
+	"recommendations": {
+  	"strong_accept": 45,
+  	"accept": 124,
+  	"conditional_accept": 56,
+  	"wait_list": 25,
+  	"reject": 8
+	}
+  },
+  "time_series": [
+	{
+  	"period": "2025-02-27/2025-03-05",
+  	"applications": 52,
+  	"average_score": 76.8,
+  	"recommendations": {
+    	"strong_accept": 8,
+    	"accept": 24,
+    	"conditional_accept": 12,
+    	"wait_list": 6,
+    	"reject": 2
+  	}
+	}
+  ],
+  "demographic_breakdown": {
+	"gender": {
+  	"male": {
+    	"count": 156,
+    	"average_score": 77.8
+  	},
+  	"female": {
+    	"count": 98,
+    	"average_score": 79.2
+  	},
+  	"non_binary": {
+    	"count": 4,
+    	"average_score": 76.5
+  	}
+	},
+	"disability_status": {
+  	"with_disability": {
+    	"count": 12,
+    	"average_score": 75.4
+  	},
+  	"without_disability": {
+    	"count": 246,
+    	"average_score": 78.3
+  	}
+	}
+  }
+}
+
