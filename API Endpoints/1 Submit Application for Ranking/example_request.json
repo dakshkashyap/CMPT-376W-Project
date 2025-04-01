@@ -1,0 +1,65 @@
+POST /v1/applications/rank HTTP/1.1
+Host: ranking.bays.ca
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+Content-Type: application/json
+ 
+{
+  "application_id": "APP123456",
+  "academic_data": {
+	"gpa": 3.75,
+	"transcripts": [
+  	{
+    	"course_code": "CMPT 120",
+    	"course_name": "Introduction to Computing Science and Programming",
+    	"grade": "A",
+    	"credits": 3
+  	},
+  	{
+    	"course_code": "CMPT 125",
+    	"course_name": "Introduction to Computing Science and Programming II",
+    	"grade": "A-",
+   	 "credits": 3
+  	},
+  	{
+    	"course_code": "MATH 151",
+    	"course_name": "Calculus I",
+    	"grade": "B+",
+    	"credits": 3
+  	}
+	],
+	"scholarships": [
+  	{
+    	"name": "Excellence in Science Scholarship",
+    	"amount": 5000
+  	}
+	]
+  },
+  "personal_profile": {
+	"statement": "I am passionate about computing science and have been programming since high school...",
+	"projects": [
+  	{
+    	"title": "Personal Website",
+    	"description": "Developed a responsive personal website using React and Node.js",
+    	"url": "https://example.com",
+    	"skills": ["JavaScript", "React", "Node.js", "HTML", "CSS"]
+  	}
+	]
+  },
+  "demographic_data": {
+	"gender": "female",
+	"has_disability": false,
+	"citizenship": "Canada"
+  },
+  "language_proficiency": {
+	"english_test_type": "IELTS",
+	"english_test_score": 7.5
+  },
+  "extracurricular_activities": [
+	{
+  	"name": "University Robotics Club",
+  	"role": "Team Lead",
+  	"duration": "2023-09 to 2025-03",
+  	"description": "Led a team of 5 students in building and programming a robot for a national competition"
+	}
+  ]
+}
