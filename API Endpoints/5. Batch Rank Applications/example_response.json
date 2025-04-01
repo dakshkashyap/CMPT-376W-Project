@@ -1,0 +1,9 @@
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+ 
+{
+  "status": "accepted",
+  "batch_id": "BATCH001",
+  "applications_count": 2,
+  "estimated_completion_time": "2025-03-27T21:50:00Z"
+}

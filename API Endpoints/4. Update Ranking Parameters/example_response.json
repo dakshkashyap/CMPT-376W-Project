@@ -1,0 +1,15 @@
+HTTP/1.1 200 OK
+Content-Type: application/json
+ 
+{
+  "parameter_set_id": "PARAMS001",
+  "status": "updated",
+  "effective_date": "2025-04-01T00:00:00Z",
+  "previous_version": "v2.4",
+  "current_version": "v2.5",
+  "changes_summary": [
+	"Decreased GPA threshold from 3.0 to 2.8",
+	"Added MATH 151 to required courses",
+	"Increased diversity weight from 8 to 10"
+  ]
+}

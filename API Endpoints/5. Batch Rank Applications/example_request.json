@@ -1,0 +1,46 @@
+POST /v1/applications/batch-rank HTTP/1.1
+Host: ranking.bays.ca
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+Content-Type: application/json
+ 
+{
+  "batch_id": "BATCH001",
+  "applications": [
+	{
+  	"application_id": "APP123456",
+  	"academic_data": {
+    	"gpa": 3.75,
+    	"transcripts": [
+      	{
+        	"course_code": "CMPT 120",
+        	"course_name": "Introduction to Computing Science and Programming",
+        	"grade": "A",
+        	"credits": 3
+      	}
+    	]
+  	},
+  	"personal_profile": {
+    	"statement": "I am passionate about computing science..."
+  	}
+	},
+	{
+  	"application_id": "APP123457",
+  	"academic_data": {
+    	"gpa": 3.42,
+    	"transcripts": [
+      	{
+        	"course_code": "CMPT 120",
+        	"course_name": "Introduction to Computing Science and Programming",
+        	"grade": "B+",
+        	"credits": 3
+      	}
+    	]
+  	},
+  	"personal_profile": {
+    	"statement": "I have always been interested in algorithms..."
+  	}
+	}
+  ],
+  "callback_url": "https://ams.sfu.ca/api/callbacks/ranking-complete",
+  "priority": "high"
+}

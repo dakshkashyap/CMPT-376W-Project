@@ -1,0 +1,22 @@
+PUT /v1/admin/ranking/parameters HTTP/1.1
+Host: ranking.bays.ca
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+Content-Type: application/json
+ 
+{
+  "parameter_set_id": "PARAMS001",
+  "parameters": {
+	"academic_weight": 50,
+	"personal_profile_weight": 25,
+	"extracurricular_weight": 15,
+	"diversity_weight": 10,
+	"gpa_threshold": 2.8,
+	"required_courses": [
+  	"CMPT 120",
+  	"CMPT 125",
+  	"MATH 151"
+	]
+  },
+  "effective_date": "2025-04-01T00:00:00Z",
+  "notes": "Adjusting parameters to better align with department goals for diversity and inclusion"
+}
