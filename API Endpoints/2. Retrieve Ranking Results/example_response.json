@@ -1,0 +1,17 @@
+HTTP/1.1 200 OK
+Content-Type: application/json
+ 
+{  "ranking_percentile": 92,
+  "recommendation": "strong_accept",
+  "completion_time": "2025-03-27T21:45:32Z",
+  "application_id": "APP123456",
+  "ranking_status": "completed",
+  "ranking_score": 85.7,
+
+  "details": {
+	"academic_score": 42.3,
+	"personal_profile_score": 18.9,
+	"extracurricular_score": 15.2,
+	"diversity_consideration": 9.3
+  }
+}

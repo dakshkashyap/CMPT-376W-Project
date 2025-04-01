@@ -1,0 +1,9 @@
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+ 
+{
+  "status": "accepted",
+  "application_id": "APP123456",
+  "ranking_job_id": "RNK789012",
+  "estimated_completion_time": "2025-03-27T22:00:00Z"
+}
