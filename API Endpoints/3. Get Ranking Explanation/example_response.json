@@ -1,0 +1,83 @@
+HTTP/1.1 200 OK
+Content-Type: application/json
+ 
+{
+  "application_id": "APP123456",
+  "ranking_score": 85.7,
+  "explanation": {
+	"academic": {
+  	"gpa": {
+    	"value": 3.75,
+    	"score": 18.5,
+    	"max_possible": 20,
+    	"notes": "GPA is in the top 15% of applicants"
+  	},
+  	"course_relevance": {
+    	"value": "high",
+    	"score": 14.8,
+    	"max_possible": 15,
+    	"notes": "Completed relevant CS and math prerequisites with strong grades"
+  	},
+  	"scholarships": {
+    	"value": "present",
+    	"score": 9.0,
+    	"max_possible": 10,
+    	"notes": "Has received merit-based scholarships"
+  	}
+	},
+	"personal_profile": {
+  	"statement_quality": {
+    	"value": "good",
+    	"score": 8.2,
+    	"max_possible": 10,
+    	"notes": "Clear articulation of goals and motivation"
+  	},
+  	"project_relevance": {
+    	"value": "high",
+    	"score": 10.7,
+    	"max_possible": 15,
+    	"notes": "Projects demonstrate relevant technical skills"
+  	}
+	},
+	"extracurricular": {
+  	"leadership": {
+    	"value": "strong",
+    	"score": 8.7,
+    	"max_possible": 10,
+    	"notes": "Demonstrated leadership in robotics club"
+  	},
+  	"community_involvement": {
+    	"value": "moderate",
+    	"score": 6.5,
+    	"max_possible": 10,
+    	"notes": "Active in volunteer teaching"
+  	}
+	},
+	"diversity_factors": {
+  	"underrepresented_gender": {
+    	"value": true,
+    	"score": 5.0,
+    	"max_possible": 5,
+    	"notes": "Applicant is from an underrepresented gender in Computing Science"
+  	},
+  	"accessibility_needs": {
+    	"value": false,
+    	"score": 0.0,
+    	"max_possible": 5,
+    	"notes": "No specific accessibility considerations needed"
+  	},
+  	"language_diversity": {
+    	"value": "moderate",
+    	"score": 4.3,
+    	"max_possible": 5,
+    	"notes": "Demonstrated English proficiency"
+  	}
+	}
+  },
+  "factors_affecting_decision": [
+	"Strong academic performance in relevant courses",
+	"Technical projects demonstrate applied knowledge",
+	"Leadership experience in relevant extracurricular activities",
+	"Contribution to gender diversity in Computing Science"
+  ]
+}
